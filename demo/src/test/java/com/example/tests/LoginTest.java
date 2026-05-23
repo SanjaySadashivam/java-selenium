@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
     public void verifyLogin() {
 
         LoginPage loginPage = new LoginPage(driver);
-
+        
         loginPage.enterUsername(ConfigReader.getProperty("username"));
         loginPage.enterPassword(ConfigReader.getProperty("password"));
         loginPage.clickLogin();
